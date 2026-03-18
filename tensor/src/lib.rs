@@ -1,2 +1,2 @@
-mod dim;
+mod dimension;
 
