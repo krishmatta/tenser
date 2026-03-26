@@ -1,7 +1,8 @@
-pub trait Dimension {
+pub trait Dimension: Copy {
     fn get_value(&self) -> usize;
 }
 
+#[derive(Clone, Copy)]
 pub struct Constant<const N: usize>;
 
 impl<const N: usize> Dimension for Constant<N> {
