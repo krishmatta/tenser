@@ -1,6 +1,6 @@
 use crate::dimension::Dimension;
 
-pub trait Shape {
+pub trait Shape: Copy {
     const RANK: usize;
 
     fn size(&self) -> usize;
